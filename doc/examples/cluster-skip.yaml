@@ -1,0 +1,12 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: cluster-skip
+spec:
+  instances: 1
+
+  plugins:
+  - name: cnpg-i-skip-initdb.leonardoce.github.com
+
+  storage:
+    size: 1Gi

@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: skip-initdb
+    cnpg.io/pluginName: cnpg-i-skip-initdb.leonardoce.github.com
+  annotations:
+    cnpg.io/pluginClientSecret: skip-initdb-client-tls
+    cnpg.io/pluginServerSecret: skip-initdb-server-tls
+    cnpg.io/pluginPort: "9090"
+  name: skip-initdb
+spec:
+  ports:
+  - port: 9090
+    protocol: TCP
+    targetPort: 9090
+  selector:
+    app: skip-initdb
