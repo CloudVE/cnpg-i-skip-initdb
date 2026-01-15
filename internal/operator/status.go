@@ -60,7 +60,7 @@ func (Implementation) SetStatusInCluster(
 
 	// If for any reason the status needs to be wiped out we can use the following:
 	// clusterstatus.NewSetClusterStatusResponseBuilder().SetEmptyStatusResponse()
-	logger.Info("setting enabled plugin status")
+	logger.Debug("setting enabled plugin status")
 
 	return clusterstatus.NewSetStatusInClusterResponseBuilder().JSONStatusResponse(Status{Enabled: true})
 }

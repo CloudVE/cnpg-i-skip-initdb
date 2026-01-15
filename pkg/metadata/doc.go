@@ -9,11 +9,11 @@ const PluginName = "cnpg-i-skip-initdb.leonardoce.github.com"
 // Data is the metadata of this plugin
 var Data = identity.GetPluginMetadataResponse{
 	Name:          PluginName,
-	Version:       "0.0.1",
-	DisplayName:   "Plugin feature showcase",
-	ProjectUrl:    "https://github.com/leonardoce/cnpg-i-skip-initdb",
-	RepositoryUrl: "https://github.com/leonardoce/cnpg-i-skip-initdb",
-	License:       "Proprietary",
-	LicenseUrl:    "https://github.com/leonardoce/cnpg-i-skip-initdb/LICENSE",
-	Maturity:      "alpha",
+	Version:       "0.1.0",
+	DisplayName:   "CNPG Skip InitDB plugin",
+	ProjectUrl:    "https://github.com/CloudVE/cnpg-i-skip-initdb",
+	RepositoryUrl: "https://github.com/CloudVE/cnpg-i-skip-initdb",
+	License:       "Apache License 2.0",
+	LicenseUrl:    "https://github.com/CloudVE/cnpg-i-skip-initdb/LICENSE",
+	Maturity:      "beta",
 }
